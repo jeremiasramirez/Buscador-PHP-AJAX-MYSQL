@@ -5,7 +5,7 @@
 
 	if(btnSendSearch && dataValue){
 		
-		btnSendSearch.addEventListener("click", (e)=>{
+		dataValue.addEventListener("keyup", (e)=>{
 
 		e.preventDefault();
 
@@ -22,8 +22,7 @@
 
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			http.send(`data=${dataValue.value}`);
-			dataValue.value = "";
-			
+
 		}, false);
 	}
 
