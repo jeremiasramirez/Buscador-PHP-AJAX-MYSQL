@@ -3,8 +3,10 @@
 	let btnSendSearch = document.getElementById("form__search__product__btn__send");
 	let dataValue = document.getElementById("name__product--js");
 
-	if(btnSendSearch){
+	if(btnSendSearch && dataValue){
+		
 		btnSendSearch.addEventListener("click", (e)=>{
+
 		e.preventDefault();
 
 			let http = new XMLHttpRequest();
@@ -20,6 +22,7 @@
 
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			http.send(`data=${dataValue.value}`);
+			dataValue.value = "";
 		}, false);
 	}
 
