@@ -16,7 +16,7 @@ class Products extends conectionDB {
 		$execquery =  mysqli_query($conection, $query);
 
 		while ($prod = mysqli_fetch_array($execquery)){
-			echo "<p>". $prod['product_name']."</p>";
+			echo "<p class='product__find' id='product__find--js'>". $prod['product_name']."</p>";
 		}
 
 
