@@ -23,6 +23,7 @@
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			http.send(`data=${dataValue.value}`);
 			dataValue.value = "";
+			
 		}, false);
 	}
 
