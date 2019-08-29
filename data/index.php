@@ -16,10 +16,6 @@ if(!empty($_POST['data']) && isset($_POST['data']) && !ctype_space($_POST['data'
 	 createInstanceOfProduct($data);
  
 } 
-else{
-	echo "<p>No hay datos para buscar.</p>";
-}
-
 
 
 ?>

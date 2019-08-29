@@ -40,19 +40,21 @@ class Products extends conectionDB {
 
 		print("<table>");
 		$this->headersproduct();
-		
-		while ($prod = mysqli_fetch_array($execquery)){
-			print("
-				<tr class='tr__product__find'>
-				 
-					<td class='product__find' id='product__find--js'>". $prod['prod_id']."</td>
-					<td class='product__find' id='product__find--js'>". $prod['product_name']."</td>
-					<td class='product__find' id='product__find--js'>". $prod['product_price']."</td>
-					<td class='product__find' id='product__find--js'>". $prod['product_distribuitor']."</td>
+	 	
+
+			while ($prod = mysqli_fetch_array($execquery)){
+				print("
+					<tr class='tr__product__find'>
 					 
-				</tr>
-			");
-		}
+						<td class='product__find' id='product__find--js'>". $prod['prod_id']."</td>
+						<td class='product__find' id='product__find--js'>". $prod['product_name']."</td>
+						<td class='product__find' id='product__find--js'>". $prod['product_price']."</td>
+						<td class='product__find' id='product__find--js'>". $prod['product_distribuitor']."</td>
+						 
+					</tr>
+				");
+			}
+	 
 		print("</table>");
 
 	}
