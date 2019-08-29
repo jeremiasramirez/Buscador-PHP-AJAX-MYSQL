@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<div class="container__title__page">
+	<h1 class="title__page">Search a product</h1>
+</div>
 
 <section class="container__search__form" id="container__search__form--js">
 
@@ -23,31 +26,10 @@
 	</form>
 	
 </section>
-<p id="data"></p>
+<section id="data"></section>
 
 <script>
 	
-
-	let btnSendSearch = document.getElementById("form__search__product__btn__send");
-	let dataValue = document.getElementById("name__product--js");
-
-	if(btnSendSearch){
-		btnSendSearch.addEventListener("click", (e)=>{
-	e.preventDefault()
-			let http = new XMLHttpRequest();
-				http.open("POST", "data/index.php", 1);
-
-				http.addEventListener("load", (e)=>{
-
-				document.getElementById("data").innerHTML=(e.target.responseText)
-				})
-				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			http.send(`data=${dataValue.value}`);
-		}, false);
-	}
-
-
-
 
 
 </script>
@@ -56,7 +38,7 @@
 
 
 
-	
+	<script src="public/js/process__search.js"></script>
 </body>
 </html>
 
