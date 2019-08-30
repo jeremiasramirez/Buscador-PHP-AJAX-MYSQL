@@ -4,6 +4,17 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+	}
+	.title__page{
+		color: white;
+		font-family: sans-serif;
+		font-size: 22px;
+		background-color: blue;
+		width: auto;
+		padding: .5em;
+		border-radius: 3px;
+		border: none;
 	}
 	.form__search__product__btn__send{
 		border:0;
@@ -32,8 +43,9 @@
 		background-color: #eee;
 		border-radius: 5px;
 	}
+
 	.product__finded{
-		background-color: green;
+		background-color: blue;
 		color: white;
 		font-weight: 600;
 		font-family: arial;
@@ -55,7 +67,7 @@
 	.header__product{
 		width: 300px;
 		margin: 0 .4em;
-		font-size: 22px;
+		font-size: 25px;
 		font-family: arial;
 		color: #eee;
 		background-color: #222;
@@ -70,6 +82,7 @@
 		border: 1px solid #eee;
 		background-color: #eee;
 	}	
+
 	.tr__product__find{
 		text-align: center;
 		width: 300px;
@@ -77,6 +90,13 @@
 		margin: .2em 0;
 
 
+	}
+	.tr__product__find:hover{
+		opacity: .8;
+		transition: .5s;
+		cursor: pointer;
+		background-color: blue;
+		transform:  translateX(10px);
 	}
 	.border{
 		border:1px solid red;

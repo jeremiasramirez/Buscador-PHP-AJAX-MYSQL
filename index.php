@@ -9,7 +9,7 @@
 <body>
 
 <div class="container__title__page">
-	<h1 class="title__page">Search a product</h1>
+	<h1 class="title__page">Search a product <i class="fas fa-egg" style="color:white;"></i></h1>
 </div>
 
 <section class="container__search__form" id="container__search__form--js">
@@ -17,7 +17,7 @@
 	<form action="" class="form__search__product" method="POST">
 		<input type="text" id="name__product--js" class="name__product" placeholder="Busca tu producto">
 		<button class="form__search__product__btn__send" id="form__search__product__btn__send">
-			Search product
+			<i class="fas fa-search" style="color:white;"></i>
 		</button>
 	</form>
 	
