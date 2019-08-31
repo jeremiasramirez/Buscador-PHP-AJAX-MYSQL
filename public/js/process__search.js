@@ -28,7 +28,8 @@
 			http.send(`data=${dataValue.value}`);
 
 		}, false);
-	}if(btnSendSearch && dataValue){
+	}
+	if(btnSendSearch && dataValue){
 		
 		btnSendSearch.addEventListener("click", (e)=>{
 
