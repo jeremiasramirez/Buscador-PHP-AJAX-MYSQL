@@ -38,7 +38,7 @@ class Products extends conectionDB {
 		$productFindNum = mysqli_num_rows($execquery);
 		$this->countproductfinded($productFindNum);
 
-		print("<table>");
+		print("<table >");
 		$this->headersproduct();
 	 	
 

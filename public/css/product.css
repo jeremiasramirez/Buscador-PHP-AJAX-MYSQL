@@ -75,6 +75,7 @@
 		border: 1px solid #ddd; 
 
 	}
+ 
 	.product__find{
 		font-family: sans-serif;
 		width: 100px;
@@ -88,7 +89,6 @@
 		width: 300px;
 
 		margin: .2em 0;
-
 
 	}
 	.tr__product__find:hover{
