@@ -9,7 +9,7 @@ global $conection;
 if(isset($_GET['id'])){
 	$id = $_GET['id'];
 	mysqli_query($conection, "DELETE FROM products WHERE prod_id='$id'");
-	header("Location: ../index.php");
+	header("Location: /buscador?rm=true");
 }
 
 ?>
