@@ -21,6 +21,7 @@ class Products extends conectionDB {
 		print("<th class='header__product'>Nombre</th>");
 		print("<th class='header__product'>Precio</th>");
 		print("<th class='header__product'>Distribuidor</th>");
+		print("<th class='header__product'>Eliminar</th>");
 
 	}
 	public function getproducts($name)
@@ -51,6 +52,8 @@ class Products extends conectionDB {
 						<td class='product__find' id='product__find--js' >". $prod['product_name']."</td>
 						<td class='product__find' id='product__find--js'>". $prod['product_price']."</td>
 						<td class='product__find' id='product__find--js'>". $prod['product_distribuitor']."</td>
+						<td class='product__find' id='product__find--js'><a href='views/delete-view.php?id=$prod[prod_id]' class='deleting' id='$prod[prod_id]'>Remover</a>
+						</td>
 						 
 					</tr>
 				");
@@ -61,4 +64,8 @@ class Products extends conectionDB {
 	}
 
 }
+ 
+
+
+
 ?>

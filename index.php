@@ -24,11 +24,11 @@
 </section>
 <section id="data"></section>
 
-<style>
-
-</style>
  
+
+
 	<script src="public/js/process__search.js"></script>
+	<script src="public/js/process__delete.js"></script>
 	<script src="public/css/lib/iconfonts/js/all.min.js"></script>
 </body>
 </html>

@@ -83,6 +83,14 @@
 		border: 1px solid #eee;
 		background-color: #eee;
 	}	
+	.product__find .deleting{
+		color:#ddd;
+		background-color: red;
+		border-radius: 3px;
+		padding: .2em .4em;
+		font-weight: 600;
+		text-decoration: none;
+	}
 
 	.tr__product__find{
 		text-align: center;
@@ -101,3 +109,4 @@
 	.border{
 		border:1px solid red;
 	}
+

@@ -9,6 +9,7 @@
 
 		e.preventDefault();
 
+
 			let http = new XMLHttpRequest();
 				http.open("POST", "data/index.php", 1);
 
@@ -54,7 +55,11 @@
 			http.send(`data=${dataValue.value}`);
 
 		}, false);
-	}
+	}	
+
+
 
 })()
 
+
+ 
