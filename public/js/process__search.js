@@ -6,8 +6,12 @@
 	if(btnSendSearch && dataValue){
 		
 		dataValue.addEventListener("keyup", (e)=>{
+			let valueStr = String(e.target.value)
+		 
+			if( (valueStr.length > 4) && !(valueStr.length == "")){
 
-		e.preventDefault();
+
+			e.preventDefault();
 
 
 			let http = new XMLHttpRequest();
@@ -27,7 +31,7 @@
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 			http.send(`data=${dataValue.value}`);
-
+		}
 		}, false);
 	}
 	if(btnSendSearch && dataValue){
