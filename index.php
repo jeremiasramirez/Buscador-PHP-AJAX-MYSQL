@@ -22,7 +22,7 @@
 <section class="container__search__form" id="container__search__form--js">
 
 	<form action="" class="form__search__product" method="POST" enctype="form">
-		<input type="text" id="name__product--js" class="name__product" placeholder="Busca tu producto">
+		<input type="search" id="name__product--js" class="name__product" placeholder="Busca tu producto">
 		<button class="form__search__product__btn__send" id="form__search__product__btn__send">
 			<i class="fas fa-search" style="color:white;"></i>
 		</button>
