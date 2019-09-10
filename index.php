@@ -28,14 +28,15 @@
 		</button>
 	</form>
 	
-</section>
+</section> 
+ 
 <section id="data"></section>
 
  
 
 
 	<script src="public/js/process__search.js"></script>
-	<script src="public/js/process__delete.js"></script>
+	<!-- <script src="public/js/process__delete.js"></script> -->
 	<script src="public/css/lib/iconfonts/js/all.min.js"></script>
 	<script src="public/css/lib/jeremias-lib/jeremias-lib.js"></script>
 </body>

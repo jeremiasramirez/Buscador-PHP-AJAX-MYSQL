@@ -33,7 +33,7 @@ class Products extends conectionDB {
 		parent::conected();
 		global $conection;
 
-		$query = "SELECT * FROM products WHERE product_name like '%$name%'";
+		$query = "SELECT * FROM products WHERE product_name like '%$name%' LIMIT 100";
 		$execquery =  mysqli_query($conection, $query);
 
 		$productFindNum = mysqli_num_rows($execquery);
