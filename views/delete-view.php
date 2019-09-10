@@ -6,8 +6,9 @@ $con::conected();
 global $conection;
 
  
-if(isset($_GET['id'])){
-	$id = $_GET['id'];
+ 
+if(isset($_POST['id'])){
+	$id = $_POST['id'];
 	mysqli_query($conection, "DELETE FROM products WHERE prod_id='$id'");
 	header("Location: /buscador?rm=true");
 }
