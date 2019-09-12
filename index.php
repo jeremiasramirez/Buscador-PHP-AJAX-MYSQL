@@ -26,6 +26,9 @@
 		<button class="form__search__product__btn__send" id="form__search__product__btn__send">
 			<i class="fas fa-search" style="color:white;"></i>
 		</button>
+		<div >
+			<a href="add.php" class="btn--add min">Add</a>
+		</div>
 	</form>
 	
 </section> 
