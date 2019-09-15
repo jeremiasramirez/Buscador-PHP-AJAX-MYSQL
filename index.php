@@ -27,7 +27,7 @@
 			<i class="fas fa-search" style="color:white;"></i>
 		</button>
 		<div >
-			<a href="add.php" class="btn--add min">Add article</a>
+			<a href="admin/insert-post.php" class="btn--add min">Add article</a>
 		</div>
 	</form>
 	
