@@ -58,7 +58,7 @@ function chargedData(){
 		dataValue.addEventListener("keyup", (e)=>{
 			let valueStr = String(e.target.value)
 		 
-			if( (valueStr.length >= 4) && !(valueStr.length == "")){
+			if( (valueStr.length >= 3) && !(valueStr.length == "")){
 
 
 			e.preventDefault();

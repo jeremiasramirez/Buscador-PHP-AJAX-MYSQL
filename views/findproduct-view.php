@@ -52,7 +52,7 @@ class Products extends conectionDB {
 						<td class='product__find' id='product__find--js' >". $prod['product_name']."</td>
 						<td class='product__find' id='product__find--js'>". $prod['product_price']."</td>
 						<td class='product__find' id='product__find--js'>". $prod['product_distribuitor']."</td>
-						<td class='product__find' id='product__find--js'><a href=''  class='deleting' id='$prod[prod_id]'>Remover</a>
+						<td class='product__find' id='product__find--js'><a href=''  class='deleting' id='$prod[prod_id]'>Remover <span class='fas fa-trash-alt'></span></a>
 						</td>
 						 
 					</tr>
