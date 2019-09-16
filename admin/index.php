@@ -29,7 +29,7 @@
 </section> 
  
  
-<p class="alert--chargin small">
+<p class="alert--chargin small" >
 	<a href="../">Ver producto agregado
 		<span class="fas fa-reply-all">
 		</span>

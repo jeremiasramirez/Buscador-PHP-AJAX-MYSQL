@@ -13,15 +13,30 @@ function createMsj(){
 			}, 3000);
  	}
 }
-(function processData(){
+function emptyCamp(){
+		if(!document.getElementById("alert")){
+		let msj = document.createElement("p");
+			msj.setAttribute("class", "btn--rm medium");
+			msj.setAttribute("id", "alert");
+			msj.textContent = "No pueden haber campos vacios";
+
+			document.body.insertAdjacentElement("beforebegin", msj);
+			setTimeout(()=>{
+				if(document.getElementById("alert")){
+					document.getElementById("alert").remove();
+				}
+			}, 3000);
+ 	}
+}
+(function insertData(){
 
 	let btnSendSearch = document.getElementById("form__post__send");
 	let dataValueName = document.getElementById("name-post");
 	let dataValuePrice = document.getElementById("price-post");
 	let dataValueDistribuitor = document.getElementById("distribuitor-post");
  
-	if(btnSendSearch && dataValueName && dataValuePrice && dataValueDistribuitor){
-		
+	if(btnSendSearch && dataValueName&& dataValuePrice && dataValueDistribuitor){
+	 
 		btnSendSearch.addEventListener("click", (e)=>{
 
 		e.preventDefault();
@@ -42,6 +57,7 @@ function createMsj(){
 					}
 					
 				})
+	 
 
 					 
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -57,7 +73,8 @@ function createMsj(){
 
 
 		}, false);
-	}	
+	}
+	 
 
 
 
