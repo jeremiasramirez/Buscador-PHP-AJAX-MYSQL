@@ -145,6 +145,15 @@ function chargedData(){
 		}
 		}, false);
 	}
+
+
+
+
+
+
+
+
+	
 	if(btnSendSearch && dataValue){
 		
 		btnSendSearch.addEventListener("click", (e)=>{

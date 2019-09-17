@@ -7,7 +7,7 @@ function chargedSuccess(){
 				msj.setAttribute("class", "alert--success medium");
 				msj.setAttribute("id", "alert");
 				msj.textContent = "Cargados correctamente";
-
+		 		 
 				document.body.insertAdjacentElement("beforebegin", msj);
 				setTimeout(()=>{
 					if(document.getElementById("alert")){
@@ -19,22 +19,18 @@ function chargedSuccess(){
 	}, 4000)
 	 
 }
+//not important
 function chargedData(){
  	if(!document.getElementById("charged")){
-		let msj = document.createElement("p");
-			msj.setAttribute("class", "btn--yes medium");
-			msj.setAttribute("id", "charged");
-			msj.textContent = "Cargando";
-		 
-			 
-			document.body.insertAdjacentElement("beforebegin", msj);
+	  
 			setTimeout(()=>{
 				if(document.getElementById("charged")){
 					document.getElementById("charged").remove();
 				}
 			}, 3000);
  	}
-}function chargedAwait(){
+}
+function chargedAwait(){
  	// if(!document.getElementById("charged")){
 		let msj = document.createElement("p");
 			msj.setAttribute("class", "btn--yes medium");
@@ -44,9 +40,14 @@ function chargedData(){
 			 
 			document.body.insertAdjacentElement("beforebegin", msj);
 			setTimeout(()=>{
-				if(document.getElementById("chargedAwait")){
-					document.getElementById("chargedAwait").remove();
+				let chargedAwaits = document.getElementById("chargedAwait");
+				let spinner = document.getElementById("spinner");
+
+				if(chargedAwaits && spinner){
+					chargedAwaits.remove();
+					spinner.remove();
 				}
+			 
 			}, 3000);
  	// }
 }
@@ -54,9 +55,11 @@ function chargedData(){
 (function loadData(){ 
 		 
 			let http = new XMLHttpRequest();
-				 chargedData();
 				http.open("GET", "/buscador/data/index.php", 1);
-				 
+
+				//not important
+				 chargedData()
+
 				http.addEventListener("load", (e)=>{
 			 	
 
