@@ -4,6 +4,7 @@ require "../models/index.php";
 class loadProduct extends conectionDB {
 
 	function countproductfinded($productFindNum){
+		
 		if( ($productFindNum === 1) ){
 			print("<p class='product__finded medium' id='product__finded--js'>". $productFindNum." producto encontrado <i class='fas fa-check'></i></p>");
 		}

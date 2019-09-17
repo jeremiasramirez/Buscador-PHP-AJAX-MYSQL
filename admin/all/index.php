@@ -10,10 +10,7 @@
  
 </head> 
 <body>
- <?php 
  
-
- ?>
 <div class="container__title__page">
 	<h1 class="btn--yes large" style="padding: 1em; margin:0">Todos los productos <i class="fas fa-egg" style="color:white;"></i></h1>
 </div>

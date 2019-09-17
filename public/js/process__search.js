@@ -1,3 +1,14 @@
+(function deleteSpinner(){
+	setTimeout(()=>{
+	 	let spinner = document.getElementById("spinner");
+
+	 	if(spinner){
+	 		spinner.remove();
+	 	}
+	 	
+ 	},1000)
+})()
+
 function messageDeleted(){
  
 		let msj = document.createElement("p");
@@ -8,13 +19,14 @@ function messageDeleted(){
 			msj.style.top = '60px'
 			msj.style.left = '30px'
 			document.body.insertAdjacentElement("beforebegin", msj);
+
 			setTimeout(()=>{
+
 				if(document.getElementById("alert")){
 					document.getElementById("alert").remove();
 				}
-			}, 500);
 
-	 
+			}, 500);
 }
 function chargedSuccess(){
  	if(!document.getElementById("alert")){
@@ -22,16 +34,16 @@ function chargedSuccess(){
 			msj.setAttribute("class", "alert--success");
 			msj.setAttribute("id", "alert");
 			msj.textContent = "Cargados correctamente";
-
 			document.body.insertAdjacentElement("beforebegin", msj);
+
 			setTimeout(()=>{
+
 				if(document.getElementById("alert")){
 					document.getElementById("alert").remove();
 				}
+
 			}, 3000);
  	}
-
-	 
 }
 function chargedData(){
  	if(!document.getElementById("charged")){
@@ -39,13 +51,8 @@ function chargedData(){
 			msj.setAttribute("class", "alert--success medium");
 			msj.setAttribute("id", "charged");
 			msj.textContent = "Cargando..";
-		 
-			 
 			document.body.insertAdjacentElement("beforebegin", msj);
- 	}
-	 
-
-	 
+ 	}	 
 }
 
 (function processData(){

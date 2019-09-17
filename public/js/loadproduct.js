@@ -1,4 +1,4 @@
- 
+
 function chargedSuccess(){
 	setTimeout(()=>{
 
@@ -55,7 +55,7 @@ function chargedAwait(){
 (function loadData(){ 
 		 
 			let http = new XMLHttpRequest();
-				http.open("GET", "/buscador/data/index.php", 1);
+				http.open("GET", "/buscador/data/alldata.php", 1);
 
 				//not important
 				 chargedData()

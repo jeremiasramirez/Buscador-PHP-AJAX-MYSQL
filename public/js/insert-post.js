@@ -1,31 +1,44 @@
-function createMsj(){
+function createMsj(msjerror){
 		if(!document.getElementById("alert")){
-		let msj = document.createElement("p");
-			msj.setAttribute("class", "alert--success medium");
+
+			let msj = document.createElement("p");
 			msj.setAttribute("id", "alert");
-			msj.textContent = "Agregado correctamente";
+
+
+			if(msjerror==1){
+
+				msj.setAttribute("class", "btn--rm medium");
+				msj.textContent = "Error al agregar";
+			}
+			else{
+				msj.setAttribute("class", "alert--success medium");
+				msj.textContent = "Agregado correctamente";
+			}
+
 
 			document.body.insertAdjacentElement("beforebegin", msj);
-			setTimeout(()=>{
-				if(document.getElementById("alert")){
-					document.getElementById("alert").remove();
-				}
-			}, 3000);
+				setTimeout(()=>{
+
+					if(document.getElementById("alert")){
+						document.getElementById("alert").remove();
+					}
+
+				}, 3000);
  	}
 }
 function emptyCamp(){
 		if(!document.getElementById("alert")){
-		let msj = document.createElement("p");
-			msj.setAttribute("class", "btn--rm medium");
-			msj.setAttribute("id", "alert");
-			msj.textContent = "No pueden haber campos vacios";
+			let msj = document.createElement("p");
+				msj.setAttribute("class", "btn--rm medium");
+				msj.setAttribute("id", "alert");
+				msj.textContent = "No pueden haber campos vacios";
+				document.body.insertAdjacentElement("beforebegin", msj);
 
-			document.body.insertAdjacentElement("beforebegin", msj);
-			setTimeout(()=>{
-				if(document.getElementById("alert")){
-					document.getElementById("alert").remove();
-				}
-			}, 3000);
+				setTimeout(()=>{
+					if(document.getElementById("alert")){
+						document.getElementById("alert").remove();
+					}
+				}, 3000);
  	}
 }
 (function insertData(){
@@ -45,14 +58,18 @@ function emptyCamp(){
 				http.open("POST", "../views/insert-post.php", 1);
 
 				http.addEventListener("load", (e)=>{
-				 
-					
+				  
+			 
+
 					if(http.readyState==4){
-						createMsj();
+
+						createMsj(http.responseText);
 						setTimeout(()=>{
+
 							dataValueName.value="";
 							dataValuePrice.value="";
 							dataValueDistribuitor.value="";
+
 						}, 3000);
 					}
 					

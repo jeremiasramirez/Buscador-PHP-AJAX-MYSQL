@@ -1,5 +1,6 @@
 <?php 
-require "../views/loadproduct.php";
+
+require "../views/findproduct-view.php";
 
 function createInstanceOfProduct($data)
 {
@@ -24,12 +25,6 @@ if(isset($_POST['data']))
 	}
 } 
 
-// function loadproduct(){
-// 	$load  = new loadProduct();
-// 	$load->getproducts();
-// }
-// loadproduct();
- 
 ?>
 
 

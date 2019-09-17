@@ -10,11 +10,32 @@ include_once "../models/index.php";
 			global $conection;		
 
 			$name= addslashes($name);
+			$name= strip_tags($name);
+
 			$price= addslashes($price);
-		 
+			$price= strip_tags($price);
+
 			$distribuitor= addslashes($distribuitor);
-		 
-		$query = mysqli_query($conection, "INSERT INTO products(product_name,product_price,product_distribuitor)VALUES('$name','$price','$distribuitor')");
+			$distribuitor= strip_tags($distribuitor);
+
+			$errnone = 1;
+		 	$errexits = 0;
+			$query = mysqli_query($conection, "INSERT INTO products(
+			product_name,
+			product_price,
+			product_distribuitor)
+			VALUES(
+			'$name',
+			'$price',
+			'$distribuitor')
+			");
+
+			if($query){
+				print($errexits);
+			}
+			else{
+				print($errnone);
+			}
 		}
 	}
  

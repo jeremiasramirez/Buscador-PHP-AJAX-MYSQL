@@ -3,6 +3,7 @@
   width: 40px;
   height: 40px;
   position: relative;
+  
 }
 .sk-circle .sk-child {
   width: 100%;
@@ -17,7 +18,7 @@
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: orange;
+  background-color: magenta;
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
           animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
@@ -25,7 +26,10 @@
 .sk-circle .sk-circle2 {
   -webkit-transform: rotate(30deg);
       -ms-transform: rotate(30deg);
-          transform: rotate(30deg); }
+          transform: rotate(30deg); 
+           }
+
+ 
 .sk-circle .sk-circle3 {
   -webkit-transform: rotate(60deg);
       -ms-transform: rotate(60deg);
@@ -102,6 +106,7 @@
 
 @-webkit-keyframes sk-circleBounceDelay {
   0%, 80%, 100% {
+      background-color: blue;
     -webkit-transform: scale(0);
             transform: scale(0);
   } 40% {
@@ -114,6 +119,7 @@
   0%, 80%, 100% {
     -webkit-transform: scale(0);
             transform: scale(0);
+             
   } 40% {
     -webkit-transform: scale(1);
             transform: scale(1);
