@@ -36,7 +36,7 @@ function chargedSuccess(){
 function chargedData(){
  	if(!document.getElementById("charged")){
 		let msj = document.createElement("p");
-			msj.setAttribute("class", "alert--success");
+			msj.setAttribute("class", "alert--success medium");
 			msj.setAttribute("id", "charged");
 			msj.textContent = "Cargando..";
 		 

@@ -1,5 +1,5 @@
 <?php 
-require "../views/findproduct-view.php";
+require "../views/loadproduct.php";
 
 function createInstanceOfProduct($data)
 {
@@ -11,16 +11,24 @@ function createInstanceOfProduct($data)
 	$newProducts->getproducts($data);
 }
  
-if(!empty($_POST['data']) && isset($_POST['data']) && !ctype_space($_POST['data'])==1)
+if(isset($_POST['data']) )
 {
+	if(!empty($_POST['data']) && !ctype_space($_POST['data'])==1)
+	{
+
 	 $data = addslashes($_POST['data']);
 	 $data = strip_tags($_POST['data']);
 	 $data = htmlentities($_POST['data']);
-
 	 createInstanceOfProduct($data);
+
+	}
 } 
 
-
+function loadproduct(){
+	$load  = new loadProduct();
+	$load->getproducts();
+}
+loadproduct();
  
 ?>
 
