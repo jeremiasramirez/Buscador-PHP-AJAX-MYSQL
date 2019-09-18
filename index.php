@@ -22,7 +22,7 @@
 		<button class="form__search__product__btn__send" id="form__search__product__btn__send">
 			<i class="fas fa-search" style="color:white;"></i>
 		</button>
-		<div >
+		<div class=articles>
 			<a href="admin/" class="btn--add min">Add article  <span class="fas fa-plus-circle"></span></a>
 			<a href="admin/all" class="btn--yes min">All articles  <span class="fas fa-align-right"></span></a>
 		</div>

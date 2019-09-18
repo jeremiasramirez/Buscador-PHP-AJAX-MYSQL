@@ -6,6 +6,10 @@
 		justify-content: center;
 
 	}
+	.container__title__page h1{
+		margin:0;
+		margin-bottom:1em;
+	}
 	.title__page{
 		color: white;
 		font-family: sans-serif;
@@ -113,3 +117,28 @@
 	.message__delete{
 		
 	}
+	.articles{
+		margin: .3em;
+		margin-top: 1em;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.articles a{
+		margin: .3em;
+	}
+
+	@media screen and (max-width: 400px){
+		.form__search__product{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.form__search__product__btn__send{
+			padding: .2em;
+		}
+		.floatback{
+			top: 100px
+		}
+	}
+ 

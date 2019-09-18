@@ -29,7 +29,7 @@
 </section> 
  
  
-<p class="alert--chargin small" >
+<p class="alert--chargin small floatback" >
 	<a href="../">Ver producto agregado
 		<span class="fas fa-reply-all">
 		</span>
@@ -37,24 +37,6 @@
 </p>
  
  <style>
- 	.responsive{
- 		display: flex;
- 		justify-content: center;
- 		align-items: center;
- 	}
- 	.f{
- 		display: grid;
- 		justify-items: center;
- 		grid-template-rows: 40% 40% 40%;
- 		grid-template-columns: 100%; 
-
- 		margin: .3em;
- 	}
- 	.f input{
- 		margin: .2em;
-
- 	}
-
  </style>
 
 

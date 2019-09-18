@@ -4,7 +4,7 @@ function chargedSuccess(){
 
 	 	if(!document.getElementById("alert")){
 			let msj = document.createElement("p");
-				msj.setAttribute("class", "alert--success medium");
+				msj.setAttribute("class", "alert--success");
 				msj.setAttribute("id", "alert");
 				msj.textContent = "Cargados correctamente";
 		 		 
@@ -33,7 +33,7 @@ function chargedData(){
 function chargedAwait(){
  	// if(!document.getElementById("charged")){
 		let msj = document.createElement("p");
-			msj.setAttribute("class", "btn--yes medium");
+			msj.setAttribute("class", "btn--yes min");
 			msj.setAttribute("id", "chargedAwait");
 			msj.textContent = "Terminando";
 		 
