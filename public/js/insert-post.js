@@ -3,7 +3,11 @@ function createMsj(msjerror){
 
 			let msj = document.createElement("p");
 			msj.setAttribute("id", "alert");
-
+			msj.style.position = 'absolute'
+			msj.style.padding = '1em'
+			msj.style.left = '0px';
+			msj.style.top = '55px';
+		 
 
 			if(msjerror==1){
 

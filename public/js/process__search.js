@@ -50,6 +50,9 @@ function chargedData(){
 		let msj = document.createElement("p");
 			msj.setAttribute("class", "alert--success medium");
 			msj.setAttribute("id", "charged");
+			msj.style.position = 'absolute'
+			msj.style.left = '0px';
+			msj.style.top = '100px';
 			msj.textContent = "Cargando..";
 			document.body.insertAdjacentElement("beforebegin", msj);
  	}	 

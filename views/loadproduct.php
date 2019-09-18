@@ -9,7 +9,7 @@ class loadProduct extends conectionDB {
 			print("<p class='product__finded medium' id='product__finded--js'>". $productFindNum." producto encontrado <i class='fas fa-check'></i></p>");
 		}
 		else if( ($productFindNum > 1) ){
-			print("<p class='product__finded medium' id='product__finded--js'>". $productFindNum." productos encontrados <i class='fas fa-check' style='border-radius:50%;background-color:darkblue;padding:.2em '></i></p>");
+			print("<p class='product__finded ' id='product__finded--js'>". $productFindNum." productos encontrados <i class='fas fa-check' style='border-radius:50%;background-color:darkblue;padding:.2em'></i></p>");
 		}
 		else{
 			print("<p class='product__finded--feature medium' id='product__finded--js'>Ningun producto encontrado. <i class='fas fa-times'></i></p>");

@@ -64,8 +64,6 @@
 		color: white;
 		font-weight: 600;
 		font-family: arial;
-		text-align: center;
-		width: 300px;
 		padding:.5em;
 	}
 	.header__product{
@@ -141,4 +139,3 @@
 			top: 100px
 		}
 	}
- 
