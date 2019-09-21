@@ -6,5 +6,5 @@ function loadproduct(){
 	$load->getproducts();
 }
 loadproduct();
- 
+
 ?>

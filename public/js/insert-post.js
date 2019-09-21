@@ -60,11 +60,11 @@ function emptyCamp(){
 
 			let http = new XMLHttpRequest();
 				http.open("POST", "../views/insert-post.php", 1);
-
+		if(dataValueName.value != "" && dataValuePrice.value != "" && dataValueDistribuitor.value != ""){
+			
 				http.addEventListener("load", (e)=>{
 				  
-			 
-
+ 
 					if(http.readyState==4){
 
 						createMsj(http.responseText);
@@ -77,7 +77,10 @@ function emptyCamp(){
 						}, 3000);
 					}
 					
+
+
 				})
+		}
 	 
 
 					 

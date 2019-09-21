@@ -72,8 +72,9 @@ function chargedAwait(){
 
 				let containerProductFrontend = document.getElementById("data");
 					containerProductFrontend.innerHTML="";
+		 
 
-					 
+						 
 				containerProductFrontend.innerHTML = e.target.responseText
 			
 		 	if(http.readyState === 4){	
@@ -93,8 +94,11 @@ function chargedAwait(){
  				
 					 	 	
 				})
-		http.send();
+
  
+
+ 		http.send();
+
  
 
 })()
