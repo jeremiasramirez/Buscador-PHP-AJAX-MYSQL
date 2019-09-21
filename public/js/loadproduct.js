@@ -38,7 +38,7 @@ function chargedAwait(){
 		let msj = document.createElement("p");
 			msj.setAttribute("class", "btn--yes min");
 			msj.setAttribute("id", "chargedAwait");
-			msj.textContent = "Terminando";
+			msj.textContent = "Preparando..";
 			msj.style.position = 'absolute'
 			msj.style.padding = '1em'
 			msj.style.left = '0px';
